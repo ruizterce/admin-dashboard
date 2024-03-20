@@ -1,20 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <div class="container">
         <div class="sidebar">
+            <div class="logo"> <img src="icons/view-dashboard.svg" alt="Dashboard icon">Main Logo</div>
+            <div class="menu">
+                <ul class="main-menu">
+                    <li><img src="icons/home.svg" alt=""><span>Home</span></li>
+                    <li><img src="icons/card-account-details.svg" alt=""><span>Profile</span></li>
+                    <li><img src="icons/message-reply.svg" alt=""><span>Messages</span></li>
+                    <li><img src="icons/clock-time-four.svg" alt=""><span>History</span></li>
+                    <li><img src="icons/card-multiple.svg" alt=""><span>Tasks</span></li>
+                    <li><img src="icons/account-group.svg" alt=""><span>Communities</span></li>
+                </ul>
+                <ul class="conf-menu">
+                    <li><img src="icons/cog.svg" alt=""><span>Settings</span></li>
+                    <li><img src="icons/face-agent.svg" alt=""><span>Support</span></li>
+                    <li><img src="icons/shield-check.svg" alt=""><span>Privacy</span></li>
+                </ul>
+            </div>
         </div>
         <div class="header">
+            <div class="row">
+                <div class="search-area">
+                    <img src="icons/magnify.svg" alt="">
+                    <input type"search">
+                </div>
+                <div class="profile-area">
+                    <img src="icons/bell-ring-outline.svg" alt="">
+                    <img id="avatar" src="cat_avatar.png" alt="">
+                    <span class="profile-name">Kareem Yancey</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="welcome-area">
+                    <img id="avatar" src="cat_avatar.png" alt="">
+                    <div class="welcome-msg">
+                        <span class="welcome-text">Hi there,</span>
+                        <span class="profile-name">Kareem Yancey (@KY)</span>
+                    </div>
+                </div>
+
+                <div class="button-area">
+                    <button type="button">New</button>
+                    <button type="button">Upload</button>
+                    <button type="button">Share</button>
+                </div>
+
+            </div>
+
+
         </div>
         <div class="main">
         </div>
     </div>
 </body>
+
 </html>
