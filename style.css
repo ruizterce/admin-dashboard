@@ -32,6 +32,8 @@ ul {
     .logo {
         display: flex;
         align-items: center;
+        font-size: 2.2rem;
+        font-weight: 900;
 
         img {
             height: 60px;
@@ -176,21 +178,138 @@ ul {
 
     background-color: #ffedd5;
     grid-row: 2/3;
-    display: grid;
 
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: repeat(auto-fit);
+    gap: 40px;
+    padding: 0px 20px;
+    overflow: hidden;
+
+    h2 {
+        margin: 30px 0px 10px 0px;
+        font-size: 1.3rem;
+    }
 
     .projects {
         grid-row: 1/3;
+
+        .card-container {
+            display: grid;
+            grid-template-columns: 2fr 2fr;
+            grid-template-rows: repeat(auto-fit);
+            gap: 20px;
+            grid-auto-flow: dense;
+
+
+
+            .card {
+                height: 16vh;
+                background-color: white;
+                padding: 30px;
+                border-radius: 10px;
+                border-left: 10px solid #169cf9;
+                position: relative;
+                box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+
+                h4 {
+                    font-size: 1.2rem;
+                    margin: 0px;
+                }
+
+                p {
+                    margin: 5px 0px 0px;
+                    font-size: 1.1rem;
+                    color: rgba(0, 0, 0, 0.6);
+                    max-height: calc(100% - 50px);
+                    overflow: hidden;
+                }
+
+                .card-icons {
+                    width: 140px;
+                    display: flex;
+                    justify-content: space-between;
+                    position: absolute;
+                    right: 20px;
+                    bottom: 10px;
+                    opacity: 50%;
+
+                    img {
+                        height: 30px;
+                    }
+                }
+            }
+        }
     }
 
     .announcements {
         grid-column: 2/3;
-        grid-row: 1/2;
+
+
+        .announcements-container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+            h6 {
+                margin: 0px;
+            }
+
+            p {
+                margin: 3px 0px;
+                font-size: 0.6em;
+                color: rgba(0, 0, 0, 0.6);
+            }
+
+            hr {
+                opacity: 30%;
+            }
+
+        }
     }
 
     .trending {
-        grid-row: 2/3;
+        h2 {
+            margin-top: 0px;
+        }
+
+        .trending-container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            gap:12px;
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+
+        }
+
+        .trending-card {
+            display: flex;
+            align-items: center;
+
+            img {
+                height: 55px;
+            }
+
+            div {
+                
+                margin-left: 15px;
+
+                h6 {
+                    margin: 0px;
+                    line-height: 0.5;
+                }
+
+                span {
+                    font-size: 0.9rem;
+                    color: rgba(0, 0, 0, 0.6);
+
+                }
+            }
+
+        }
     }
+
+
 }
